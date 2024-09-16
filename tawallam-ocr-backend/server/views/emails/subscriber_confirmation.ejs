@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+        line-height: 1.6;
+        text-align: center;
+        padding: 20px;
+      }
+
+      .container {
+        max-width: 600px;
+        width: 80%;
+        margin: 0 auto;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: left;
+        padding: 20px;
+      }
+
+      .logo {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      .logo img {
+        max-width: 150px;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+      }
+
+      h1 {
+        color: #007bff;
+        margin-bottom: 20px;
+      }
+
+      p {
+        margin-bottom: 20px;
+        color: #333;
+      }
+
+      .otp-code {
+        display: inline-block;
+        padding: 15px 30px;
+        background-color: #007bff;
+        color: #fff;
+        font-size: 20px;
+        font-weight: bold;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      .footer {
+        margin-top: 30px;
+        color: #777;
+        font-size: 14px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="background-color: #f4f4f4; width: 100%; text-align: center">
+      <tr>
+        <td>
+          <div class="logo">
+            <img src="<%= data.base_url %>/public/uploads/main-logo-icon.png" alt="Logo" />
+          </div>
+
+          <div class="container">
+            <p><%= data.type == 'user' ? 'Thank you for subscribing to our platform! We\'re excited to have you on board.' : 'Hi Admin, Following person has been subscribed successfully on twallam.com' %></p>
+            <% if (data.type=='admin') { %>
+            <p>Email : <%= data.sender_email %></p>
+            <% } %>
+          </div>
+          <div class="footer">
+            <p>Best regards,</p>
+            <p>Twallam OCR Team</p>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

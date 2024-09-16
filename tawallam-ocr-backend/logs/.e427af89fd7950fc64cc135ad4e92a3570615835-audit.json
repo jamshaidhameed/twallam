@@ -1,0 +1,20 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "C:\\laragon\\www\\tawallam\\tawallam-ocr-backend\\logs\\.e427af89fd7950fc64cc135ad4e92a3570615835-audit.json",
+    "files": [
+        {
+            "date": 1721042670512,
+            "name": "C:\\laragon\\www\\tawallam\\tawallam-ocr-backend\\logs\\2024-07-15.log",
+            "hash": "0e72bf1b29810b4b45dfad0e7125a9e62a7414158585d21e4864cccdfd583a00"
+        },
+        {
+            "date": 1721371730418,
+            "name": "C:\\laragon\\www\\tawallam\\tawallam-ocr-backend\\logs\\2024-07-19.log",
+            "hash": "26252cd77bf40dac14933d6518e93cf2be87f8791793c95c7b2f1f71917d4506"
+        }
+    ],
+    "hashType": "sha256"
+}
